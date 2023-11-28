@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  /* Header/logo Title */
+  .header {
+    padding: 80px;
+    text-align: center;
+    color: #fdfbee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+     height: 630px;
+    
+  }
+  em {
+    color: #000;
+  }
+  
+  
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+      margin-top: 380px;
+      border-left-width: 20px;
+      margin-left: 0px;
+      margin-right: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #d3a432;
+  }
+
+ /* active class navbar */
+  .active {
+    background-color: #bf5f5f;
+    color: #000;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color:#060C0D;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: grey;
+    color: black;
+  }
+  
+  /* Column container */
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar*/
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    color:#060C0D;
+  }
+  /* Sidebar/left column */
+  .side-left {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color:#060C0D;
+    padding: 20px;
+    color:#ffffff;
+  }
+  
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: #ffffff;
+    padding: 20px;
+    color:#050203;
+  }
+  .main-con {   
+    -ms-flex: 40%; /* IE10 */
+    flex: 40%;
+    background-color: #060C0D;
+    padding: 20px;
+    color:#fdfbee;
+  }
+  /* Main for contact */
+  .container {   
+    -ms-flex: 40%; /* IE10 */
+    flex: 40%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin: 50px 500px 50px 500px;
+    border-width: 20px 0px 20px;
+    
+   }
+  /* side-right column */
+  .side-right {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #060C0D;
+    padding: 20px;
+    color:#ffffff;
+  }
+  
+  
+  /* Fake image, just for this example */
+  .fakeimg  {  
+      background-color: #201019;
+    width: 100%;
+    padding: 20px;
+    background: no-repeat center;
+      background-size: 100% 100%;
+  }
+  /* Button tag */
+  button {
+    background-color: #4299A3; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  /* form */
+  input, select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #d3a432;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center content vertically */
+      text-align: center;
+      padding: bottom 2px; /* Center text horizontally */
+    }
+    .header h1 {
+      background-size: contain; /* Adjust the background size as needed */
+      height: auto; 
+      padding-bottom:50px;
+      width:fit-content;
+      margin-bottom: -70px;/* Adjust the height as needed */
+  }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
